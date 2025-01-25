@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: jjwt.webflux
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5431/webflux-jjwt
+    username: admin
+    password: admin
+
+
+jwt:
+  secret:
+    key: 552070461bc3a57269e7d4f6f5c509479302d408519ea03acd714b6489e8ce09
+  time:
+    expiration: 600000

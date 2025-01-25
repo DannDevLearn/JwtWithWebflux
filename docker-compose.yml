@@ -1,0 +1,11 @@
+services:
+  database:
+    container_name: webflux-jjwt
+    image: postgres:17.2
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: webflux-jjwt
+    ports:
+      - '5431:5432'
